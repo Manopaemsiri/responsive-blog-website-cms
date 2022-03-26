@@ -1,0 +1,134 @@
+:root {
+  --body-bg-color: #f5f6f7;
+  --blog-bg-color: #ffffff;
+  --title-color: #16161a;
+  --line-out-color: rgba(155, 155, 155, 0.1);
+  --line-in-color: #fd3a13;
+  --status-color: #f4d03f;
+  --btn-color: #fd3a13;
+  --active-link-color: #fd3a13;
+  --active-text-color: #ffffff;
+  --footer-bg: #09090a;
+  --side-date-color: #97979D;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+h2,
+.blog_author {
+  font-weight: bold;
+}
+
+.blog_date {
+  margin-left: 10px;
+}
+
+.blog-content {
+  background-color: var(--blog-bg-color);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.blog-content a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.btn-primary {
+  background: var(--btn-color);
+  border: none;
+  border-radius: 0;
+}
+
+.btn-primary:hover {
+  background: var(--btn-color);
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+.line-container {
+  width: 100%;
+  height: 3px;
+  background: var(--line-out-color);
+}
+
+.line {
+  width: 13%;
+  height: 100%;
+  background: var(--line-in-color);
+}
+
+.pagination li .active_link {
+  background: var(--active-link-color) !important;
+  color: var(--active-text-color);
+}
+
+.popular_title {
+  margin: 0px 0px 5px !important;
+  font-size: 14px;
+}
+
+.popular_date {
+  color: var(--side-date-color);
+  font-size: 12px;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.social-link ul li {
+  margin-right: 20px;
+}
+
+.social-link i {
+  color: #ffffff;
+}
+
+.post-heading {
+  position: relative;
+  background: yellow !important;
+}
+
+.post-content {
+  position: absolute;
+  top: 0;
+  background: yellow !important;
+}
+
+.post-content h4 {
+  color: yellow;
+}
+
+@media (max-width: 575.98px) {
+
+  .container-pagination {
+     justify-content: center !important;
+  }
+  
+  .footer .logo {
+    text-align: center !important;
+  }
+
+  .footer h6 {
+    display: none;
+  }
+
+  .footer .about_desc {
+    text-align: center;
+  }
+
+  .popular_item img {
+      width: 200px;
+  }
+}
+
